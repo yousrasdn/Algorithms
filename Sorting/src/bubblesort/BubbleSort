@@ -11,4 +11,4 @@ At the worst case, we have to make (n-1) passes through the list. In each pass, 
 This implies that the time complexity is (n-1)(n-1) which is O(n^2).
 
 At the best case (when the array is already sorted), we only perform one pass in which (n-1) comparaisons are performed.
-Hence, the time complexity is O(n).
+Hence, the time complexity is Ω(n).
