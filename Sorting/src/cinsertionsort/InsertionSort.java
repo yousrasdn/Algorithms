@@ -1,15 +1,15 @@
-package insertionsort;
+package cinsertionsort;
 
-import util.ArrayElementsBuilder;
+import util.ListToStringBuilder;
 
 public class InsertionSort {
     public static void main(String[] args) {
         Integer[] numbers =  new Integer[]{2, 5, 1, 9, 7, 3, 4};
         System.out.println("Welcome to the Insertion Sort Algorithm");
-        System.out.println("Your input: " + ArrayElementsBuilder.buildAStringOfArrayElements(numbers));
+        System.out.println("Your input: " + ListToStringBuilder.buildAStringOfArrayElements(numbers));
 
         insertionSort(numbers);
-        System.out.println("The sorted array: " + ArrayElementsBuilder.buildAStringOfArrayElements(numbers));
+        System.out.println("The sorted array: " + ListToStringBuilder.buildAStringOfArrayElements(numbers));
     }
 
     private static void insertionSort(Integer[] numbers) {

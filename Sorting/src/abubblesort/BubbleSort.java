@@ -1,15 +1,15 @@
-package bubblesort;
+package abubblesort;
 
-import util.ArrayElementsBuilder;
+import util.ListToStringBuilder;
 
 public class BubbleSort {
     public static void main(String[] args) {
         Integer[] numbers =  new Integer[]{2, 5, 1, 9, 7, 3, 4};
         System.out.println("Welcome to the Bubble Sort Algorithm");
-        System.out.println("Your input: " + ArrayElementsBuilder.buildAStringOfArrayElements(numbers));
+        System.out.println("Your input: " + ListToStringBuilder.buildAStringOfArrayElements(numbers));
 
         bubbleSort(numbers);
-        System.out.println("The sorted array: " + ArrayElementsBuilder.buildAStringOfArrayElements(numbers));
+        System.out.println("The sorted array: " + ListToStringBuilder.buildAStringOfArrayElements(numbers));
     }
 
     // Ascending order sort
