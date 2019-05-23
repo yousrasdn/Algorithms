@@ -1,4 +1,4 @@
-package dmergesort;
+package sorting;
 
 import util.ListToStringBuilder;
 

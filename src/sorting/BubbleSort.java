@@ -1,4 +1,4 @@
-package abubblesort;
+package sorting;
 
 import util.ListToStringBuilder;
 

@@ -1,4 +1,4 @@
-package cinsertionsort;
+package sorting;
 
 import util.ListToStringBuilder;
 

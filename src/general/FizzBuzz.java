@@ -1,10 +1,12 @@
+package general;
+
 /**
  * Problem statement: Write a short program that prints each number from 1 to 100 on a new line.
  * For each multiple of 3, print "Fizz" instead of the nummber.
  * For each multiple of 5, print "Buzz" instead of the number.
- * For numbers which are multiple of both 3 and 5, print "FizzBuzz" instead of the number
+ * For numbers which are multiple of both 3 and 5, print "general.FizzBuzz" instead of the number
  *
- * Reference: statement taken from https://www.youtube.com/watch?v=h36mQC3JFMo  Java Brans - Java Interview Coding Challenge #1: FizzBuzz
+ * Reference: statement taken from https://www.youtube.com/watch?v=h36mQC3JFMo  Java Brans - Java Interview Coding Challenge #1: general.FizzBuzz
  */
 public class FizzBuzz {
     private static final String FIZZ = "Fizz";

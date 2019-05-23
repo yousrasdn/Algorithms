@@ -1,4 +1,4 @@
-package bselectionsort;
+package sorting;
 
 import util.ListToStringBuilder;
 

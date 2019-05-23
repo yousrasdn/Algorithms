@@ -1,8 +1,11 @@
+package arrays;
+
 import java.util.Arrays;
 import java.util.BitSet;
 
 
 /**
+ * Date: 5/22/2019
  * Reference: https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
  * Find the missing number in a given integer array of 1 to 10?
  */

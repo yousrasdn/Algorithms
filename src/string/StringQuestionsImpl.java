@@ -1,4 +1,4 @@
-package string.implementation;
+package string;
 
 import string.StringQuestions;
 /**
