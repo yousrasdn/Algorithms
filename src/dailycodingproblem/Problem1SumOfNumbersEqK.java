@@ -1,4 +1,4 @@
-package general;
+package dailycodingproblem;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * Source:  Daily Coding Problem https://www.dailycodingproblem.com/
  */
-public class SumOfNumbersEqK {
+public class Problem1SumOfNumbersEqK {
     static int[] ar = {10, 15, 3, 7};
     static int k = 17;
 
