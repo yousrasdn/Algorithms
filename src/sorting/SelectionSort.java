@@ -1,7 +1,5 @@
 package sorting;
 
-import util.ListToStringBuilder;
-
 public class SelectionSort {
 
     public static void main(String[] args) {

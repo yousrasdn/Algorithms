@@ -1,7 +1,5 @@
 package sorting;
 
-import util.ListToStringBuilder;
-
 public class BubbleSort {
     public static void main(String[] args) {
         Integer[] numbers =  new Integer[]{2, 5, 1, 9, 7, 3, 4};

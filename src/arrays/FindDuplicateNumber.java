@@ -24,7 +24,6 @@ public class FindDuplicateNumber {
     }
 
     // Assuming there is at most one duplicate number
-
     /**
      * Method 1 - Time complexity: O(n^2)
      * @param ar input values
