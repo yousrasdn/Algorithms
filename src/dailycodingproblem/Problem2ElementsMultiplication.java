@@ -28,8 +28,47 @@ public class Problem2ElementsMultiplication {
 
     }
 
-    int[] productOfElements(int[] initial) {
-        if(initial == null || initial.length==1) {
+    /**
+     * Without the division operator and with O(n) time complexity:
+     * Approach: for each element, the product of all its left side values
+     * times all its right side values should give the product of all elements except the current element.
+     */
+     int[] productOfElements(int[] initial) {
+        if(initial == null || initial.length==0) {
+            return emptyArray;
+        }
+
+        var result = new int[initial.length];
+        var left = new int[initial.length];
+        var right = new int[initial.length];
+
+        // Left side: find the product of the left side of each current element
+        left[0] = 1;
+
+        for(int i = 0; i<initial.length-1; i++) {
+            left[i+1] = left[i]*initial[i];
+        }
+
+         // Right side: find the product of the right side of each current element
+         right[initial.length-1] = 1;
+
+         for(int i = initial.length-1; i>0; i--) {
+             right[i-1] = right[i]*initial[i];
+         }
+
+         // Find the result
+         for (int i=0; i < initial.length; i++) {
+             result[i] = left[i]*right[i];
+         }
+
+        return result;
+    }
+
+    /**
+     * Using division operator
+     */
+    int[] productOfElementsUsingDivisionOperator(int[] initial) {
+        if(initial == null || initial.length==0) {
             return emptyArray;
         }
         var result = new int[initial.length];
