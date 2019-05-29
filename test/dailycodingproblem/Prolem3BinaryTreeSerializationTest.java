@@ -36,6 +36,6 @@ public class Prolem3BinaryTreeSerializationTest {
                 new Node("left", null, null),
                 new Node("right", null, null)));
 
-        assertEquals("root(left(null,null),right(null,null))", result);
+        assertEquals("root-left-null-null-right-null-null", result);
     }
 }

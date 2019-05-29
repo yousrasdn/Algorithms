@@ -1,5 +1,10 @@
 package dailycodingproblem;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
+
 /**
  * Statement:
  * Given the root to a binary tree, implement serialize(root), which serializes the tree into a string,
@@ -21,36 +26,56 @@ package dailycodingproblem;
  */
 public class Prolem3BinaryTreeSerialization {
     Node node;
+    static int counter;
 
     Prolem3BinaryTreeSerialization() {
-        this.node = new Node("root", new Node("left", new Node("left", null, null), null), new Node("right", null, null));
+//        this.node = new Node("root", new Node("left", new Node("left", null, null), null), new Node("right", null, null));
+        this.node = new Node("root", new Node("left", null, null), new Node("right", null, null));
+
     }
     public static void main(String[] args) {
 
         Prolem3BinaryTreeSerialization instance = new Prolem3BinaryTreeSerialization();
         System.out.println(instance.serialize(instance.node));
+        instance.deserialize(instance.serialize(instance.node));
     }
 
+    // The following uses preorder tree traversal
     String serialize(Node node) {
         if(node == null ) {
             return "null";
         }
         String treeToString = "";
 
-        treeToString += node.val + "(";
+        treeToString += node.val + "-";
         treeToString += serialize(node.left);
 
-        treeToString += ",";
+        treeToString += "-";
         treeToString += serialize(node.right);
-
-        treeToString += ")";
 
         return treeToString;
     }
 
-//    BinaryTree deserialize(String tree) {
-//
-//    }
+    Node deserialize(String nodeAsStr) {
+        Node node = new Node();
+        String[] arr = nodeAsStr.split("-");
+
+        deserialize(arr);
+        return node;
+    }
+
+    Node deserialize(String[] arr) {
+        if(counter > arr.length || arr[counter].equals("null")) {
+            counter++;
+            return null;
+        }
+
+        Node node = new Node(arr[counter++]);
+        node.left = deserialize(arr);
+        node.right = deserialize(arr);
+
+        return node;
+    }
 
 }
 
@@ -58,6 +83,9 @@ class Node {
     String val;
     Node left;
     Node right;
+
+    Node() {
+    }
 
     Node(String val) {
         this.val = val;
