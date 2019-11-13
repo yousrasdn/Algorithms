@@ -1,4 +1,4 @@
-### Algorithms Practice Using Java
+### Algorithms and Data Structure Practice Using Java
 The source code can be found under src/.
 
 
