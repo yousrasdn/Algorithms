@@ -1,0 +1,12 @@
+Insertion sort is another type of inplace algortihms (just as Bubble Sort and Selection Sort).
+The strategy of this algorithm relies on the following process:
+For every element in the list, compare it to all the element on its left side.
+If it is less than one of them, insert it into the right position.
+
+Space Complexity
+  O(1).
+
+Time Complexity
+ O(n^2).
+
+  Ω(n).

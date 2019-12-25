@@ -1,0 +1,13 @@
+Things to know:
+Arrays:
+1-Can contain anything
+2-Have a fixed size
+3-Elements can be randomly accessed with O(1) time
+
+
+The killer features of array are:
+1-get(int index)'s complexity is O(1)
+2-set(int index, T value)'s complexity is O(1)
+
+However, insert(int index's complexity is O(n)
+because in the worst case we have to shift all elements to the right => O(n)
