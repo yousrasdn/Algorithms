@@ -1,0 +1,14 @@
+Bubble sort algorithm relies on a simple swapping strategy. It consists of swapping adjacent elements that are out of order by continuously
+moving upward in the list of inputs. As long as there was at least one element swapped in the previous pass, another pass is performed.
+The elements are bubbled up until they occupy their right position.
+
+Space Complexity
+This alogirthm is in place. When algorithm.sorting, the only extra space we needed was a temp variable to help with the swapping of elements.
+Thus, the space complexity is O(1).
+
+Time Complexity
+At the worst case, we have to make (n-1) passes through the list. In each pass, we make (n-1) comparisons.
+This implies that the time complexity is (n-1)(n-1) which is O(n^2).
+
+At the best case (when the array is already sorted), we only perform one pass in which (n-1) comparaisons are performed.
+Hence, the time complexity is Ω(n).

@@ -11,3 +11,8 @@ The killer features of array are:
 
 However, insert(int index's complexity is O(n)
 because in the worst case we have to shift all elements to the right => O(n)
+
+Same thing for delete: complexity is O(n)
+
+When inserting elements or adding new elements, must check the size of array. If the size=initial capacity,
+then must resize the array. During resize, the array's capacity is doubled.
