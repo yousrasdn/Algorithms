@@ -1,0 +1,13 @@
+a list is a serie of nodes linked together.
+
+A linked list starts with a Head and ends with a Tail. In the middle, we find Nodes.
+
+ H              N          T
+["a" - o]->["b" - o]->["c" - o] -> null
+
+In contrast to array,
+a linked list has no random access. Thus get and set operations have a time complexity of O(n).
+does not have a fixed capacity. Thus, it can grow incrementally.
+
+Killer feature:
+Ability to insert and delete in O(1).
