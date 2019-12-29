@@ -12,8 +12,9 @@ public class LinkedList {
     }
 
     private Node head;
+    private int size = 0;
 
-    public void addFront(int data) {
+    public void addFront(final int data) {
         Node node = new Node(data);
 
         // if head is null, set the head to be the new node
@@ -27,9 +28,11 @@ public class LinkedList {
 
         // make head be the new node
         head = node;
+
+        size++;
     }
 
-    public void addBack(int data) {
+    public void addBack(final int data) {
         Node node = new Node(data);
 
         // if head is null, set the head to be the new node
@@ -44,6 +47,8 @@ public class LinkedList {
         }
 
         current.next = node;
+
+        size++;
     }
 
     public int getFirst() {
@@ -64,10 +69,6 @@ public class LinkedList {
     }
 
     public int size() {
-        if(head == null) {
-            return 0;
-        }
-
         int counter = 0;
         Node current = head;
 
@@ -78,6 +79,41 @@ public class LinkedList {
         }
 
         return counter;
+    }
+
+    public void clear() {
+        head = null;
+    }
+
+    public void delete(final int lookUpValue) {
+        if(head == null) {
+            return;
+        }
+
+        if(head.data == lookUpValue) {
+            head = head.next;
+            return;
+        }
+
+        Node current = head;
+
+        while (current.next != null) {
+            if(current.next.data == lookUpValue) {
+                current.next = current.next.next;
+                return;
+            }
+
+            current = current.next;
+        }
+    }
+
+    public void print() {
+        Node current = head;
+        while (current != null) {
+            System.out.println(current.data);
+            current = current.next;
+        }
+        System.out.println("");
     }
 
     private void checkIfHeadIsPresent() {

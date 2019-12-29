@@ -60,44 +60,44 @@ class LinkedListTest {
         assertEquals(3, linkedList.size());
     }
 
-//    @Test
-//    public void clear() {
-//        linkedList.addBack(1);
-//        linkedList.addBack(2);
-//        linkedList.addBack(3);
-//
-//        linkedList.clear();
-//
-//        assertEquals(0, linkedList.size());
-//    }
+    @Test
+    public void clear() {
+        linkedList.addBack(1);
+        linkedList.addBack(2);
+        linkedList.addBack(3);
 
-//    @Test
-//    public void deleteValue() {
-//        linkedList.addBack(1);
-//        linkedList.addBack(2);
-//        linkedList.addBack(3);
-//
-//        linkedList.deleteValue(2);
-//
-//        assertEquals(2, linkedList.size());
-//        assertEquals(1, linkedList.getFirst());
-//        assertEquals(3, linkedList.getLast());
-//    }
+        linkedList.clear();
 
-//    @Test
-//    public void deleteLastValue() {
-//        linkedList.addBack(1);
-//        linkedList.addBack(2);
-//        linkedList.addBack(3);
-//        linkedList.addBack(4);
-//
-//        linkedList.deleteValue(4);
-//
-//        assertEquals(3, linkedList.size());
-//        assertEquals(1, linkedList.getFirst());
-//        assertEquals(3, linkedList.getLast());
-//
-//       linkedList.print();
-//    }
+        assertEquals(0, linkedList.size());
+    }
+
+    @Test
+    public void deleteFromTheList() {
+        linkedList.addBack(1);
+        linkedList.addBack(2);
+        linkedList.addBack(3);
+
+        linkedList.delete(2);
+
+        assertEquals(2, linkedList.size());
+        assertEquals(1, linkedList.getFirst());
+        assertEquals(3, linkedList.getLast());
+    }
+
+    @Test
+    public void deleteLastValue() {
+        linkedList.addBack(1);
+        linkedList.addBack(2);
+        linkedList.addBack(3);
+        linkedList.addBack(4);
+
+        linkedList.delete(4);
+
+        assertEquals(3, linkedList.size());
+        assertEquals(1, linkedList.getFirst());
+        assertEquals(3, linkedList.getLast());
+
+       linkedList.print();
+    }
 
 }

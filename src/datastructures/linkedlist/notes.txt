@@ -10,4 +10,6 @@ a linked list has no random access. Thus get and set operations have a time comp
 does not have a fixed capacity. Thus, it can grow incrementally.
 
 Killer feature:
-Ability to insert and delete in O(1).
+Ability to insert in O(1).
+
+The delete operation has a time complexity of O(n).
