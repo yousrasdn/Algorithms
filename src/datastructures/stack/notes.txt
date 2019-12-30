@@ -1,0 +1,8 @@
+Stack:
+LIFO principle => Last In, First Out
+
+operations: push and pop
+
+Killer feature: push and pop in O(1)
+
+
