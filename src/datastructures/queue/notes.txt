@@ -1,0 +1,13 @@
+Queue:
+FIFO principle => First In, First Out
+
+operations: add (queue) and remove (dequeue)
+
+Using a single list implementation,
+    When adding, we add to the tail.
+    When removing, we remove from the head. Because if we removed from the tail, it will take us linear time (O(n)).
+
+Killer feature: add and remove in O(1)
+
+
+

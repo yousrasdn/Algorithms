@@ -58,7 +58,7 @@ public class Stack {
 
     private void checkIfHeadIsPresent() {
         if(head == null) {
-            throw new IllegalStateException("There is no element in the list.");
+            throw new IllegalStateException("There is no element in the stack.");
         }
     }
 }
