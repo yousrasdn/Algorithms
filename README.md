@@ -1,7 +1,7 @@
 ### Algorithms and Data Structure Practice Using Java
 The source code can be found under src/.
 
-This project covers both algorithms and data structured.
+This project covers both algorithms and data structures.
 
 To visit the algorithm section, navigate to `src\algorithm`
 
