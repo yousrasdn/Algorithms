@@ -1,0 +1,15 @@
+Hashtable is a key value lookup data structure. It provided fast lookups.
+
+A hashtable uses a hash function to store and lookup values.
+
+Once a hash function is determined, a hash for each key is generated.
+Then, this hash is converted into an index (index = hash_code % initial_table_size).
+
+A good hash function must provide fast lookups, even distribution and minimization of collisions.
+
+When a collision occurs, chaining is used: we build a linked list to store the elements that have the same key.
+
+Killer features:
+search, insert and delete have a O(1) time complexity in the best case.
+
+However, in the worst case (when lots of collisions occur), the worst time complexity is O(n)
