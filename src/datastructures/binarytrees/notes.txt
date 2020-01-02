@@ -1,0 +1,29 @@
+Binary tree
+
+Characteristics:
+Each node has at most two children.
+
+Three types of binary trees:
+
+o Full      binary tree: a tree where each node has either zero or two children
+o Perfect   binary tree: a tree where each node has exactly two children (example: a family tree)
+o Balanced  binary tree: a tree that has the minimum possible depth.
+
+
+To search an item in a tree, there are two types of algorithms:
+o Depth   First Search
+o Breadth First Search
+
+There are 3 types of DFS:
+- In order traversal: traverse the left subtree first, then visits the root, then traverses the right subtree.
+- Pre order traversal: visit the root node, then traverses the left subtree, then the right subtree.
+- Post order traversal: travers the left subtree then the right subtree, and finally visits the root.
+
+
+Binary Search Tree:
+
+It is a tree where at each node n,
+the left child is less than n, and the right child is greater than n => this tree stores items in a sorted order.
+
+The runtime of insert, delete and find is O(log n), meaning that we have to make log n iterations to reach the desired node.
+
