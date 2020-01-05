@@ -6,16 +6,16 @@ public class BubbleSort {
         System.out.println("Welcome to the Bubble Sort Algorithm");
         System.out.println("Your input: " + ListToStringBuilder.buildAStringOfArrayElements(numbers));
 
-        bubbleSort(numbers);
+        sort(numbers);
         System.out.println("The sorted array: " + ListToStringBuilder.buildAStringOfArrayElements(numbers));
     }
 
     // Ascending order sort
-    private static void bubbleSort(Integer[] numbers) {
+    public static Integer[] sort(Integer[] numbers) {
         if(numbers==null || numbers.length==0)
-            return;
+            return numbers;
 
-        boolean swapped = false;
+        boolean swapped;
         int temp;
 
         do { // Repeat while at least one element was swapped
@@ -34,5 +34,36 @@ public class BubbleSort {
                 }
             }
         }while (swapped);
+
+        return numbers;
     }
+
+    public static Integer[] sortWay2(Integer[] numbers) {
+        if(numbers == null || numbers.length == 0 || numbers.length ==1) {
+            return numbers;
+        }
+
+        int sortDelimiter = numbers.length - 1;
+        for (int i=0; i <= sortDelimiter; i++) {
+            for (int j = 0; j <= sortDelimiter-1; j++ ) {
+                if(numbers[j]>numbers[j+1]) {
+                    int temp = numbers[j];
+                    numbers[j] = numbers[j+1];
+                    numbers[j+1] = temp;
+                }
+            }
+
+            sortDelimiter--;
+        }
+
+        return numbers;
+    }
+
+    public static void print(Integer[] a ) {
+         for (int i = 0; i < a.length; i++) {
+             System.out.print(" " + a[i]);
+         }
+    }
+
+
 }
