@@ -25,5 +25,6 @@ Binary Search Tree:
 It is a tree where at each node n,
 the left child is less than n, and the right child is greater than n => this tree stores items in a sorted order.
 
-The runtime of insert, delete and find is O(log n), meaning that we have to make log n iterations to reach the desired node.
+The average (when the tree is well balanced) runtime of insert, delete and find is O(log n),
+meaning that we have to make log n iterations to reach the desired node.
 

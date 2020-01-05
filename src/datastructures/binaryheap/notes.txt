@@ -1,0 +1,20 @@
+Binary Heap:
+
+Two types: binary heap MAX and binary heap MIN
+
+A binary heap is a binary tree data structure that stores either the smallest or the largest element on the top of the tree.
+
+The higher priorities elements are at the top, and the lowest priorities elements are at the bottom.
+
+Runtime Characteristics:
+peeking (retrieving the min item when it's a Heap Min BT, or the max item in case of a Heap Max BT): O(1)
+
+extracting the min or max: O(log n) since we need to maintain the order, we have to heapify down
+
+inserting: O(log n) we have to heapify up to maintain the heap order.
+
+We can use a binary heap to find the shortes path, for priority queues.
+
+
+
+
