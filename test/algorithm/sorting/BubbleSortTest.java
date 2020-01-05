@@ -17,13 +17,13 @@ class BubbleSortTest {
     void sortWay1() {
         Integer[] array = {5, 1, 4, 2, 8};
 
-        Integer[] sorted = BubbleSort.sort(array);
+        BubbleSort.sort(array);
 
-        assertEquals(1, sorted[0]);
-        assertEquals(2, sorted[1]);
-        assertEquals(4, sorted[2]);
-        assertEquals(5, sorted[3]);
-        assertEquals(8, sorted[4]);
+        assertEquals(1, array[0]);
+        assertEquals(2, array[1]);
+        assertEquals(4, array[2]);
+        assertEquals(5, array[3]);
+        assertEquals(8, array[4]);
     }
 
     @Test
@@ -33,29 +33,29 @@ class BubbleSortTest {
         Integer[] array = {10, 5, 7, 1, 4, 2, 8};
         BubbleSort.print(array );
 
-        Integer[] sorted = BubbleSort.sortWay2(array);
+        BubbleSort.sortWay2(array);
 
         System.out.println("\nSort Result....");
-        BubbleSort.print(sorted);
-        assertEquals(1, sorted[0]);
-        assertEquals(2, sorted[1]);
-        assertEquals(4, sorted[2]);
-        assertEquals(5, sorted[3]);
-        assertEquals(7, sorted[4]);
-        assertEquals(8, sorted[5]);
-        assertEquals(10, sorted[6]);
+        BubbleSort.print(array);
+        assertEquals(1, array[0]);
+        assertEquals(2, array[1]);
+        assertEquals(4, array[2]);
+        assertEquals(5, array[3]);
+        assertEquals(7, array[4]);
+        assertEquals(8, array[5]);
+        assertEquals(10, array[6]);
 
         System.out.println("\nSorting..... ");
         Integer[] array2 = {5,2,1};
         BubbleSort.print(array2 );
 
-        sorted = BubbleSort.sortWay2(array2);
+        BubbleSort.sortWay2(array2);
 
-        assertEquals(1, sorted[0]);
-        assertEquals(2, sorted[1]);
-        assertEquals(5, sorted[2]);
+        assertEquals(1, array2[0]);
+        assertEquals(2, array2[1]);
+        assertEquals(5, array2[2]);
 
         System.out.println("\nSort Result....");
-        BubbleSort.print(sorted);
+        BubbleSort.print(array);
     }
 }

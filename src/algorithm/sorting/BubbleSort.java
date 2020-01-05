@@ -11,9 +11,9 @@ public class BubbleSort {
     }
 
     // Ascending order sort
-    public static Integer[] sort(Integer[] numbers) {
+    public static void sort(Integer[] numbers) {
         if(numbers==null || numbers.length==0)
-            return numbers;
+            return;
 
         boolean swapped;
         int temp;
@@ -34,13 +34,11 @@ public class BubbleSort {
                 }
             }
         }while (swapped);
-
-        return numbers;
     }
 
-    public static Integer[] sortWay2(Integer[] numbers) {
+    public static void sortWay2(Integer[] numbers) {
         if(numbers == null || numbers.length == 0 || numbers.length ==1) {
-            return numbers;
+            return;
         }
 
         int sortDelimiter = numbers.length - 1;
@@ -55,8 +53,6 @@ public class BubbleSort {
 
             sortDelimiter--;
         }
-
-        return numbers;
     }
 
     public static void print(Integer[] a ) {
