@@ -1,0 +1,22 @@
+Quick sort works in the following way:
+Given an array,
+a pivot is chosen.
+a left and right pointers are chosen.
+
+the array is sorted using the pivot as a reference point:
+all elements to the left of the pivot that are greater than the pivot
+are moved to the right side of the pivot
+and all elements to the right of the pivot that are less than the pivot
+are moved to the left side of the pivot
+
+then take whats to the left of the pivot as a new partition and repeat.
+then take what to the right of the pivot as a new partition and repeat.
+
+
+Space Complexity
+  O(1).
+
+Time Complexity
+ O(nlogn).
+
+  Ω(nlogn).
