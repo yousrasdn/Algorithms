@@ -2,6 +2,7 @@ package datastructures.graph;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class Graph {
 
@@ -22,7 +23,7 @@ public class Graph {
     }
 
     /**
-     * BFS starting from vertex s
+     * Breadth First Search starting from vertex s
      * @param s the starting point
      */
     public void bfs(int s) {
@@ -52,6 +53,36 @@ public class Graph {
                     visited[n] = true;
                     System.out.printf("Queueing %d\n",  n);
                     queue.add(n);
+                }
+            }
+        }
+    }
+
+    /**
+     * Depth First Search starting from vertex s
+     * @param s the starting point
+     */
+    public void dfs(int s) {
+        // set all vertices to false (not visited)
+        boolean visited[] = new boolean[numberOfVertices];
+
+        // create a queue for DFS
+        Stack<Integer> visitedStack = new Stack<>();
+
+        // set the current node as visited and push it
+        visited[s] = true;
+        visitedStack.add(s);
+
+        while (!(visitedStack.isEmpty())) {
+            int current = visitedStack.pop();
+            System.out.println(current + " ");
+
+            Iterator<Integer> i = adj[current].listIterator();
+            while (i.hasNext()) {
+                int n = i.next();
+                if(!visited[n]) {
+                    visitedStack.add(n);
+                    visited[n] = true;
                 }
             }
         }

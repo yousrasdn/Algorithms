@@ -10,10 +10,7 @@ class GraphTest {
     @BeforeEach
     void SetUp() {
         g = new Graph(8);
-    }
 
-    @Test
-    void BreadFirstSearch() {
         g.addEdge(0, 1);
         g.addEdge(1, 0);
         g.addEdge(1, 4);
@@ -32,9 +29,15 @@ class GraphTest {
         g.addEdge(2, 5);
         g.addEdge(2, 7);
         g.addEdge(7, 2);
+    }
 
+    @Test
+    void BreadFirstSearch() {
         g.bfs(0);
     }
 
-
+    @Test
+    void DepthFirstSearch() {
+        g.dfs(0);
+    }
 }
