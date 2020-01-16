@@ -1,6 +1,6 @@
 package algorithm.arrays.fetching;
 
-import algorithm.shared.Pair;
+import algorithm.arrays.fetching.util.Pair;
 
 import java.util.ArrayList;
 import java.util.List;

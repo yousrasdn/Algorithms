@@ -1,4 +1,4 @@
-package algorithm.shared;
+package algorithm.arrays.fetching.util;
 
 public class Pair<I> {
     private I x;
