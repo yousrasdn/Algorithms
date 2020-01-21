@@ -2,6 +2,10 @@ package algorithm.list;
 
 import java.util.HashSet;
 
+/**
+ * This class answers the following problem:
+ * Given a list, remove the duplicate values (refer to removeDuplicates method for the implementation)
+ */
 public class DuplicateRemover {
 
     private Node head;
