@@ -6,7 +6,7 @@ package datastructures.binarytrees;
  */
 public class BinarySearchTree {
 
-    private static class Node {
+    public static class Node {
         private int key;
         private String value;
         private Node left, right;
@@ -23,12 +23,24 @@ public class BinarySearchTree {
                 return left.min();
             }
         }
+
+        public Node getLeft() {
+            return this.left;
+        }
+
+        public Node getRight() {
+            return this.right;
+        }
     }
 
     private  Node root;
 
     public BinarySearchTree() {
         this.root = null;
+    }
+
+    public Node getRoot() {
+        return this.root;
     }
 
     public String find(final int key) {
